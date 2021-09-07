@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start" : "npm run start --prefix client",
-    "install" : "npm install --prefix client"
+    "install" : "cd client && npm install"
   },
   "repository": {
     "type": "git",
