@@ -1,11 +1,12 @@
 import React from 'react'
+import heroDesktop from './../images/image-header-desktop.jpg'
 
 const Stats = () => {
     return (
         <div className="root-wrapper">
             <div id="main-container">
                 <div id="content-container">
-                    <h1 id="title-main">{'Get insights that help \n your business grow.'}</h1>
+                    <h1 id="title-main">Get <span id="title-main-highlight">insights</span> {'that help \n your business grow.'}</h1>
                     <p id="description-main">{
                         'Discover the benefits of data analytics and make \n \
                         better decisions regarding revenue, customer \n \
@@ -26,7 +27,9 @@ const Stats = () => {
                         </div>
                     </div>
                 </div>
-                <div id="hero-container"></div>
+                <div id="hero-container" style={{ backgroundImage: `url(${heroDesktop})` }}>
+                    <div id="hero-filter"></div>
+                </div>
             </div>
         </div>
     )
