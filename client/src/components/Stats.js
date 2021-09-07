@@ -1,17 +1,22 @@
 import React from 'react'
 import heroDesktop from './../images/image-header-desktop.jpg'
+import heroMobile from './../images/image-header-mobile.jpg'
 
-const Stats = () => {
+function imageState(image) {
+    if (image == 'heroDesktop') {
+        return heroDesktop;
+    } else if (image == 'heroMobile') {
+        return heroMobile;
+    }
+}
+
+const Stats = (props) => {
     return (
         <div className="root-wrapper">
             <div id="main-container">
                 <div id="content-container">
-                    <h1 id="title-main">Get <span id="title-main-highlight">insights</span> {'that help \n your business grow.'}</h1>
-                    <p id="description-main">{
-                        'Discover the benefits of data analytics and make \n \
-                        better decisions regarding revenue, customer \n \
-                        experience, and overall efficiency.'
-                    }</p>
+                    <h1 id="title-main">Get <span id="title-main-highlight">insights</span> {props.title}</h1>
+                    <p id="description-main">{props.description}</p>
                     <div id="stats-container">
                         <div className="stat-container">
                             <h1 className="stat-title">10k+</h1>
@@ -27,7 +32,7 @@ const Stats = () => {
                         </div>
                     </div>
                 </div>
-                <div id="hero-container" style={{ backgroundImage: `url(${heroDesktop})` }}>
+                <div id="hero-container" style={{ backgroundImage: `url(${imageState(props.image)})` }}>
                     <div id="hero-filter"></div>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Stats from "./components/Stats.js";
-import StatsMobile from "./components/StatsMobile.js";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -28,20 +27,34 @@ function useWindowDimensions() {
 const SizeController = () => {
   const { height, width } = useWindowDimensions();
 
-  if (width>1000) {
+  if (width>1200) {
     return (
       <div>
-        <p style={{color:'white'}}>{width}</p>
         <link rel="stylesheet" href="./component-styles/Stats.css"/>
-        <Stats/>
+        <Stats 
+          image='heroDesktop'
+          title={'that help \n your business grow.'}
+          description={'\
+            Discover the benefits of data analytics and make \n \
+            better decisions regarding revenue, customer \n \
+            experience, and overall efficiency.'}
+        />
       </div>
     );
   } else {
+    
     return (
       <div>
-        <p style={{color:'white'}}>{width}</p>
         <link rel="stylesheet" href="./component-styles/StatsMobile.css"/>
-        <StatsMobile/>
+        <Stats 
+          image='heroMobile' 
+          title={'that \n help your business \n grow.'}
+          description={'\
+            Discover the benefits of data \n \
+            analytics and make better decisions \n \
+            regarding revenue, customer \n \
+            experience, and overall efficiency.'}
+        />
       </div>
     );
   }
@@ -50,7 +63,6 @@ const SizeController = () => {
 function App() {
   return (
     <div className="App">
-      
       <SizeController/>
     </div>
   );
