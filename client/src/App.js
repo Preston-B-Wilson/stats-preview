@@ -24,6 +24,10 @@ function useWindowDimensions() {
   return windowDimensions;
 }
 
+function convertRange( value, r1, r2 ) { 
+  return ( value - r1[ 0 ] ) * ( r2[ 1 ] - r2[ 0 ] ) / ( r1[ 1 ] - r1[ 0 ] ) + r2[ 0 ];
+}
+
 const SizeController = () => {
   const { height, width } = useWindowDimensions();
 
@@ -42,7 +46,9 @@ const SizeController = () => {
       </div>
     );
   } else {
-    
+
+    let convertedWidth = convertRange(width-100, [0,width], [0.1,1])
+
     return (
       <div>
         <link rel="stylesheet" href="./component-styles/StatsMobile.css"/>
@@ -54,6 +60,7 @@ const SizeController = () => {
             analytics and make better decisions \n \
             regarding revenue, customer \n \
             experience, and overall efficiency.'}
+          resizeTransform= {'scale(' + convertedWidth +')'}
         />
       </div>
     );

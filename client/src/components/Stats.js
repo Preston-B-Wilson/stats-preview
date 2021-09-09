@@ -11,9 +11,10 @@ function imageState(image) {
 }
 
 const Stats = (props) => {
+
     return (
         <div className="root-wrapper">
-            <div id="main-container">
+            <div id="main-container" style={{transform: props.resizeTransform}}>
                 <div id="content-container">
                     <h1 id="title-main">Get <span id="title-main-highlight">insights</span> {props.title}</h1>
                     <p id="description-main">{props.description}</p>
