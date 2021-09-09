@@ -1,4 +1,4 @@
-# Order Summary Challenge
+# Stats preview component challenge
 
 ![alt text](https://i.gyazo.com/716070461e6d375a2ffffd20dc66217c.png)
 
