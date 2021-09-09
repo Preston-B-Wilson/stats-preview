@@ -1,6 +1,6 @@
 # Order Summary Challenge
 
-![alt text]()
+![alt text](https://i.gyazo.com/716070461e6d375a2ffffd20dc66217c.png)
 
 This is my completion of the Stats preview component challenge on frontendmentor.io
 https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62
