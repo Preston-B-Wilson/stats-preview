@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/stats-preview-challenge/static/css/main.fa9a2e33.chunk.css",
+    "main.js": "/stats-preview-challenge/static/js/main.adfef37e.chunk.js",
+    "main.js.map": "/stats-preview-challenge/static/js/main.adfef37e.chunk.js.map",
+    "runtime-main.js": "/stats-preview-challenge/static/js/runtime-main.4694d494.js",
+    "runtime-main.js.map": "/stats-preview-challenge/static/js/runtime-main.4694d494.js.map",
+    "static/js/2.df258a86.chunk.js": "/stats-preview-challenge/static/js/2.df258a86.chunk.js",
+    "static/js/2.df258a86.chunk.js.map": "/stats-preview-challenge/static/js/2.df258a86.chunk.js.map",
+    "static/js/3.f8a4f781.chunk.js": "/stats-preview-challenge/static/js/3.f8a4f781.chunk.js",
+    "static/js/3.f8a4f781.chunk.js.map": "/stats-preview-challenge/static/js/3.f8a4f781.chunk.js.map",
+    "index.html": "/stats-preview-challenge/index.html",
+    "static/css/main.fa9a2e33.chunk.css.map": "/stats-preview-challenge/static/css/main.fa9a2e33.chunk.css.map",
+    "static/js/2.df258a86.chunk.js.LICENSE.txt": "/stats-preview-challenge/static/js/2.df258a86.chunk.js.LICENSE.txt",
+    "static/media/image-header-desktop.72d6e2a0.jpg": "/stats-preview-challenge/static/media/image-header-desktop.72d6e2a0.jpg",
+    "static/media/image-header-mobile.399f71e7.jpg": "/stats-preview-challenge/static/media/image-header-mobile.399f71e7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4694d494.js",
+    "static/js/2.df258a86.chunk.js",
+    "static/css/main.fa9a2e33.chunk.css",
+    "static/js/main.adfef37e.chunk.js"
+  ]
+}
