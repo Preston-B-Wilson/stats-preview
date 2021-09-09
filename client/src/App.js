@@ -34,7 +34,7 @@ const SizeController = () => {
   if (width>1200) {
     return (
       <div>
-        <link rel="stylesheet" href="./stats-preview-challenge/component-styles/Stats.css"/>
+        <link rel="stylesheet" href={process.env.PUBLIC_URL + "/component-styles/Stats.css"}/>
         <Stats 
           image='heroDesktop'
           title={'that help \n your business grow.'}
@@ -51,7 +51,7 @@ const SizeController = () => {
 
     return (
       <div>
-        <link rel="stylesheet" href="./stats-preview-challenge/component-styles/StatsMobile.css"/>
+        <link rel="stylesheet" href={process.env.PUBLIC_URL + "/component-styles/StatsMobile.css"}/>
         <Stats 
           image='heroMobile' 
           title={'that \n help your business \n grow.'}
