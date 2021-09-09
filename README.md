@@ -18,7 +18,7 @@ git clone https://github.com/yosoypan/stats-preview-challenge.git
 
 ## Usage
 
-Pass these commands in the order-summary-challenge directory.
+Pass these commands in the stats-preview-challenge directory.
 
 v Installs dependencies inside client directory (react).
 ```bash
